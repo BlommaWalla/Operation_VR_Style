@@ -9,6 +9,6 @@ public class Blaster : MonoBehaviour {
     private ProjectilePool m_ProjectilePool = null;
 
     private void Awake() {
-        m_ProjectilePool = new ProjectilePool(m_ProjectilePrefab, 10);
+        m_ProjectilePool = new ProjectilePool(m_ProjectilePrefab, 5);
     }
 }
