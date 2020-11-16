@@ -7332,6 +7332,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3570157425155794254}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1488968873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488968871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60eceb9439d449a49aec5efc5e9ec4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!54 &1488968876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10360,10 +10372,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 154956655122506408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e102f374b9203c44697eb7a075556332, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ab6dd13f14793f4e85d1dea4cabf271, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ProjectilePrefab: {fileID: 1488968871}
 --- !u!23 &159517061470053724
 MeshRenderer:
   m_ObjectHideFlags: 0

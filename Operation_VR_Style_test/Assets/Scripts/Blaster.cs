@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using Valve.VR;
 public class Blaster : MonoBehaviour {
+
+    //public SteamVR_Action_Boolean m_FireAction = null;
 
     public GameObject m_ProjectilePrefab = null;
 

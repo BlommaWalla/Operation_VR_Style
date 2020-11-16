@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
-{
+public class Projectile : MonoBehaviour {
     public float lifeTime = 5f;
 
     private Rigidbody m_RigidBody = null;
 
     private void Awake() {
-        m_RigidBody = GetComponent<Rigidbody>() {
-            SetInnactive();
-        }
+        m_RigidBody = GetComponent<Rigidbody>();
+        SetInnactive();
 
     }
 
@@ -30,8 +28,10 @@ public class Projectile : MonoBehaviour
     }
 
     private IEnumerator TrackLifetime() {
-        yield return new WaitForSeconds(m_Lifetime);
+        //yield return new WaitForSeconds(m_Lifetime);
         SetInnactive();
+
+        return null;
     }
 
     public void SetInnactive() {
