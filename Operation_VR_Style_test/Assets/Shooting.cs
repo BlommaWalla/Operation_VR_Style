@@ -5,6 +5,7 @@ using VRTK;
 public class Shooting : MonoBehaviour
 {
     public GameObject bullet;
+    public Transform barrel;
 
     void Start()
     {
@@ -13,7 +14,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot(object sender, InteractableObjectEventArgs e) {
         Debug.Log("pang");
-        //Instantiate(bullet, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(bullet, barrel.position, barrel.rotation);
 
 
     }
