@@ -10376,6 +10376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1488968871}
+  barrel: {fileID: 5971025550446347720}
 --- !u!23 &159517061470053724
 MeshRenderer:
   m_ObjectHideFlags: 0
