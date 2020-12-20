@@ -15,6 +15,5 @@ public class Shooting : MonoBehaviour {
         Debug.Log("pang");
         m_projectile = Instantiate(bullet, barrel.position, barrel.rotation);
 
-
     }
 }

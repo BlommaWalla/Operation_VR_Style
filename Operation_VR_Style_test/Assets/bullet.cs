@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using VRTK;
 
 public class bullet : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    private Rigidbody m_rigidbody = null;
+
+
+    
+
+    void Move() {
+        Debug.Log("funky");
+        m_rigidbody.AddRelativeForce(Vector3.forward * 10, ForceMode.Impulse);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void start() { 
+        Move();
     }
+
+
 }
