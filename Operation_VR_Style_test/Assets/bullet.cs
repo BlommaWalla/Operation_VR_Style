@@ -7,16 +7,12 @@ public class bullet : MonoBehaviour
 {
     private Rigidbody m_rigidbody = null;
 
-
-    
-
-    void Move() {
-        Debug.Log("funky");
-        m_rigidbody.AddRelativeForce(Vector3.forward * 10, ForceMode.Impulse);
-    }
+    private Rigidbody Rigidbody { get => m_rigidbody; set => m_rigidbody = value; }
 
     void start() { 
-        Move();
+        Rigidbody.AddForce(Vector3.forward * 10, ForceMode.Impulse);
+        Debug.Log("funky");
+
     }
 
 
