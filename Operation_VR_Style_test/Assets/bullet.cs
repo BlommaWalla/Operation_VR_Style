@@ -5,13 +5,10 @@ using VRTK;
 
 public class bullet : MonoBehaviour
 {
-    //private Rigidbody m_rigidbody = null;
-
-    //private Rigidbody Rigidbody { get => m_rigidbody; set => m_rigidbody = value; }
+    public int force = 10;
 
     void Start() {
-        GetComponent<Rigidbody>().AddForce(transform.forward * 10, ForceMode.Impulse);
-        Debug.Log("funky");
+        GetComponent<Rigidbody>().AddForce(transform.forward * force, ForceMode.Impulse);
 
     }
 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VRTK;
+
 public class Shooting : MonoBehaviour {
     public GameObject bullet;
     public Transform barrel;
@@ -12,7 +13,6 @@ public class Shooting : MonoBehaviour {
     }
 
     void Shoot(object sender, InteractableObjectEventArgs e) {
-        Debug.Log("pang");
         m_projectile = Instantiate(bullet, barrel.position, barrel.rotation);
 
     }
